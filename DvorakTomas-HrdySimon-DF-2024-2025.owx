@@ -1,0 +1,554 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.lide.uhk.cz/dvorato3/joga"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.lide.uhk.cz/dvorato3/joga">
+    <Prefix name="" IRI="http://www.lide.uhk.cz/dvorato3/joga/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>Jóga je soubor fyzických, mentálních a duchovních praktik, jejichž cílem je dosažení rovnováhy a
+harmonie těla, mysli a ducha. Pochází z Indie a má tisíciletou tradici. Zahrnuje různé techniky a etické
+zásady. Jóga je zaměřena na zlepšení zdraví, zklidnění mysli a dosažení vnitřního klidu.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.1</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#AdhoMukhaSvanasana"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Anapana"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Balasana"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Benefits"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BetterSleep"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BhaktiYoga"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bhramari"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BreathingExercise"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChronicPainRelief"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Country"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DecresedAnxiety"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DecresedStress"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DirghaPranajama"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HealthBenefit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#India"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JnanaYoga"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kapalanhati"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KarmaYoga"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MantraMeditaion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MeditationExcercise"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MentalBenefit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Metta"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mindfulness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NadiSodhana"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalExercise"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RajaYoga"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Region"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Salabhasana"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Savasana"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Setubandhasana"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tadasana"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ujjaji"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VirabhadrasanaI"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vizualization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vrksasana"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Yoga"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#YogaExercise"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#YogaPath"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBenefit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBreathingExercise"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCountry"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasExercise"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasHealthBenefit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMeditationExercise"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasOriginLocation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPath"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPhysicalBenefit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPhysicalExercise"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isBnefit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isBreathingExercise"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCountry"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isExercise"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isHealthBenefit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isMeditationExercise"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isOriginLocation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isOriginLocationOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPathOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPhysicalBenefit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPhysicalExercise"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#AdhoMukhaSvanasana"/>
+        <Class IRI="#PhysicalExercise"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Anapana"/>
+        <Class IRI="#MeditationExcercise"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Balasana"/>
+        <Class IRI="#PhysicalExercise"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BetterSleep"/>
+        <Class IRI="#HealthBenefit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BhaktiYoga"/>
+        <Class IRI="#YogaPath"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bhramari"/>
+        <Class IRI="#BreathingExercise"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BreathingExercise"/>
+        <Class IRI="#YogaExercise"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChronicPainRelief"/>
+        <Class IRI="#HealthBenefit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Country"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DecresedAnxiety"/>
+        <Class IRI="#MentalBenefit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DecresedStress"/>
+        <Class IRI="#MentalBenefit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DirghaPranajama"/>
+        <Class IRI="#BreathingExercise"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HealthBenefit"/>
+        <Class IRI="#Benefits"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#India"/>
+        <Class IRI="#Country"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JnanaYoga"/>
+        <Class IRI="#YogaPath"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kapalanhati"/>
+        <Class IRI="#BreathingExercise"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KarmaYoga"/>
+        <Class IRI="#YogaPath"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MantraMeditaion"/>
+        <Class IRI="#MeditationExcercise"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MeditationExcercise"/>
+        <Class IRI="#YogaExercise"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MentalBenefit"/>
+        <Class IRI="#Benefits"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Metta"/>
+        <Class IRI="#MeditationExcercise"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mindfulness"/>
+        <Class IRI="#MeditationExcercise"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NadiSodhana"/>
+        <Class IRI="#BreathingExercise"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalExercise"/>
+        <Class IRI="#YogaExercise"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RajaYoga"/>
+        <Class IRI="#YogaPath"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Region"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Salabhasana"/>
+        <Class IRI="#PhysicalExercise"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Savasana"/>
+        <Class IRI="#PhysicalExercise"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Setubandhasana"/>
+        <Class IRI="#PhysicalExercise"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tadasana"/>
+        <Class IRI="#PhysicalExercise"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ujjaji"/>
+        <Class IRI="#BreathingExercise"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VirabhadrasanaI"/>
+        <Class IRI="#PhysicalExercise"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vizualization"/>
+        <Class IRI="#MeditationExcercise"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vrksasana"/>
+        <Class IRI="#PhysicalExercise"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Location"/>
+        <Class IRI="#Yoga"/>
+        <Class IRI="#YogaExercise"/>
+        <Class IRI="#YogaPath"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasBenefit"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasBreathingExercise"/>
+        <ObjectProperty IRI="#hasExercise"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCountry"/>
+        <ObjectProperty IRI="#hasOriginLocation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasExercise"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasHealthBenefit"/>
+        <ObjectProperty IRI="#hasBenefit"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasMeditationExercise"/>
+        <ObjectProperty IRI="#hasExercise"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPhysicalBenefit"/>
+        <ObjectProperty IRI="#hasBenefit"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPhysicalExercise"/>
+        <ObjectProperty IRI="#hasExercise"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isBreathingExercise"/>
+        <ObjectProperty IRI="#isExercise"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isCountry"/>
+        <ObjectProperty IRI="#isOriginLocation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isExercise"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isHealthBenefit"/>
+        <ObjectProperty IRI="#isBnefit"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isMeditationExercise"/>
+        <ObjectProperty IRI="#isExercise"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isOriginLocationOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isPhysicalBenefit"/>
+        <ObjectProperty IRI="#isBnefit"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isPhysicalExercise"/>
+        <ObjectProperty IRI="#isExercise"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasBenefit"/>
+        <ObjectProperty IRI="#isBnefit"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasBreathingExercise"/>
+        <ObjectProperty IRI="#isBreathingExercise"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasCountry"/>
+        <ObjectProperty IRI="#isCountry"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasExercise"/>
+        <ObjectProperty IRI="#isExercise"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasHealthBenefit"/>
+        <ObjectProperty IRI="#isHealthBenefit"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasMeditationExercise"/>
+        <ObjectProperty IRI="#isMeditationExercise"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasOriginLocation"/>
+        <ObjectProperty IRI="#isOriginLocation"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasPath"/>
+        <ObjectProperty IRI="#isPathOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasPhysicalBenefit"/>
+        <ObjectProperty IRI="#isPhysicalBenefit"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasPhysicalExercise"/>
+        <ObjectProperty IRI="#isPhysicalExercise"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPath"/>
+        <Class IRI="#Yoga"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPath"/>
+        <Class IRI="#YogaPath"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AdhoMukhaSvanasana</IRI>
+        <Literal>Pes hlavou dolů</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Balasana</IRI>
+        <Literal>Pozice dítěte</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Bhramari</IRI>
+        <Literal>Bzučivé dýchání</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DirghaPranajama</IRI>
+        <Literal>Plné jógové dýchání</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Kapalanhati</IRI>
+        <Literal>Dýchání ohně</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NadiSodhana</IRI>
+        <Literal>Střídavé dýchání nosními dírkami</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PhysicalExercise</IRI>
+        <Literal>ásany</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Salabhasana</IRI>
+        <Literal>Pozice kobylky</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Savasana</IRI>
+        <Literal>Pozice mrtvého těla</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Setubandhasana</IRI>
+        <Literal>Most</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Tadasana</IRI>
+        <Literal>Pozice hory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Ujjaji</IRI>
+        <Literal>Vítězný dech</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#VirabhadrasanaI</IRI>
+        <Literal>Pozice bojovníka</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Vrksasana</IRI>
+        <Literal>Pozice stromu</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasOriginLocation</IRI>
+        <Literal>Má původní lokaci</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasPath</IRI>
+        <Literal>Má  cestu</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isOriginLocationOf</IRI>
+        <Literal>je lokací původu</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPathOf</IRI>
+        <Literal>Je cestou</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

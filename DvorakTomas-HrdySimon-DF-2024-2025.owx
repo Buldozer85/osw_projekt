@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.lide.uhk.cz/dvorato3/joga">
-    <Prefix name="" IRI="http://www.lide.uhk.cz/dvorato3/joga/"/>
+    <Prefix name="" IRI="http://www.lide.uhk.cz/dvorato3/joga"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -62,6 +62,9 @@ zásady. Jóga je zaměřena na zlepšení zdraví, zklidnění mysli a dosažen
         <Class IRI="#DirghaPranajama"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#FitnessYoga"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#HealthBenefit"/>
     </Declaration>
     <Declaration>
@@ -95,10 +98,28 @@ zásady. Jóga je zaměřena na zlepšení zdraví, zklidnění mysli a dosažen
         <Class IRI="#Mindfulness"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#MindfulnessYoga"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ModernApplication"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#NadiSodhana"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Niyamas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhilosophicalConcept"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalBenefit"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#PhysicalExercise"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PuppyYoga"/>
     </Declaration>
     <Declaration>
         <Class IRI="#RajaYoga"/>
@@ -110,6 +131,9 @@ zásady. Jóga je zaměřena na zlepšení zdraví, zklidnění mysli a dosažen
         <Class IRI="#Salabhasana"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Samadhi"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Savasana"/>
     </Declaration>
     <Declaration>
@@ -117,6 +141,9 @@ zásady. Jóga je zaměřena na zlepšení zdraví, zklidnění mysli a dosažen
     </Declaration>
     <Declaration>
         <Class IRI="#Tadasana"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TherapeuticYoga"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Ujjaji"/>
@@ -129,6 +156,9 @@ zásady. Jóga je zaměřena na zlepšení zdraví, zklidnění mysli a dosažen
     </Declaration>
     <Declaration>
         <Class IRI="#Vrksasana"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Yamas"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Yoga"/>
@@ -156,6 +186,12 @@ zásady. Jóga je zaměřena na zlepšení zdraví, zklidnění mysli a dosažen
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasMeditationExercise"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMentalBenefit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasModernApplication"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasOriginLocation"/>
@@ -201,6 +237,9 @@ zásady. Jóga je zaměřena na zlepšení zdraví, zklidnění mysli a dosažen
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isPhysicalExercise"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#practices"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#AdhoMukhaSvanasana"/>
@@ -251,6 +290,10 @@ zásady. Jóga je zaměřena na zlepšení zdraví, zklidnění mysli a dosažen
         <Class IRI="#BreathingExercise"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#FitnessYoga"/>
+        <Class IRI="#ModernApplication"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#HealthBenefit"/>
         <Class IRI="#Benefits"/>
     </SubClassOf>
@@ -291,12 +334,28 @@ zásady. Jóga je zaměřena na zlepšení zdraví, zklidnění mysli a dosažen
         <Class IRI="#MeditationExcercise"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#MindfulnessYoga"/>
+        <Class IRI="#ModernApplication"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#NadiSodhana"/>
         <Class IRI="#BreathingExercise"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Niyamas"/>
+        <Class IRI="#PhilosophicalConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalBenefit"/>
+        <Class IRI="#Benefits"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#PhysicalExercise"/>
         <Class IRI="#YogaExercise"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PuppyYoga"/>
+        <Class IRI="#TherapeuticYoga"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#RajaYoga"/>
@@ -311,6 +370,10 @@ zásady. Jóga je zaměřena na zlepšení zdraví, zklidnění mysli a dosažen
         <Class IRI="#PhysicalExercise"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Samadhi"/>
+        <Class IRI="#Niyamas"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Savasana"/>
         <Class IRI="#PhysicalExercise"/>
     </SubClassOf>
@@ -321,6 +384,10 @@ zásady. Jóga je zaměřena na zlepšení zdraví, zklidnění mysli a dosažen
     <SubClassOf>
         <Class IRI="#Tadasana"/>
         <Class IRI="#PhysicalExercise"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TherapeuticYoga"/>
+        <Class IRI="#ModernApplication"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Ujjaji"/>
@@ -338,6 +405,71 @@ zásady. Jóga je zaměřena na zlepšení zdraví, zklidnění mysli a dosažen
         <Class IRI="#Vrksasana"/>
         <Class IRI="#PhysicalExercise"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Yamas"/>
+        <Class IRI="#PhilosophicalConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Yoga"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasHealthBenefit"/>
+            <Class IRI="#HealthBenefit"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Yoga"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasMentalBenefit"/>
+            <Class IRI="#MentalBenefit"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Yoga"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasModernApplication"/>
+            <Class IRI="#ModernApplication"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Yoga"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPath"/>
+            <Class IRI="#YogaPath"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Yoga"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPhysicalBenefit"/>
+            <Class IRI="#PhysicalBenefit"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#YogaPath"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#practices"/>
+            <Class IRI="#YogaExercise"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Benefits"/>
+        <Class IRI="#Location"/>
+        <Class IRI="#ModernApplication"/>
+        <Class IRI="#PhilosophicalConcept"/>
+        <Class IRI="#Yoga"/>
+        <Class IRI="#YogaExercise"/>
+        <Class IRI="#YogaPath"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BhaktiYoga"/>
+        <Class IRI="#JnanaYoga"/>
+        <Class IRI="#KarmaYoga"/>
+        <Class IRI="#RajaYoga"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Country"/>
+        <Class IRI="#Region"/>
+    </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#Location"/>
         <Class IRI="#Yoga"/>
@@ -367,6 +499,10 @@ zásady. Jóga je zaměřena na zlepšení zdraví, zklidnění mysli a dosažen
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasMeditationExercise"/>
         <ObjectProperty IRI="#hasExercise"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasMentalBenefit"/>
+        <ObjectProperty IRI="#hasBenefit"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasPhysicalBenefit"/>
@@ -550,5 +686,5 @@ zásady. Jóga je zaměřena na zlepšení zdraví, zklidnění mysli a dosažen
 
 
 
-<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 

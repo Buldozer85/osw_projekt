@@ -227,9 +227,6 @@ zásady. Jóga je zaměřena na zlepšení zdraví, zklidnění mysli a dosažen
         <ObjectProperty IRI="#isOriginLocation"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isOriginLocationOf"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#isPathOf"/>
     </Declaration>
     <Declaration>
@@ -275,7 +272,7 @@ zásady. Jóga je zaměřena na zlepšení zdraví, zklidnění mysli a dosažen
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Country"/>
-        <Class IRI="#Location"/>
+        <Class IRI="#Region"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#DecresedAnxiety"/>
@@ -453,6 +450,21 @@ zásady. Jóga je zaměřena na zlepšení zdraví, zklidnění mysli a dosažen
     </SubClassOf>
     <DisjointClasses>
         <Class IRI="#Benefits"/>
+        <Class IRI="#KarmaYoga"/>
+        <Class IRI="#Location"/>
+        <Class IRI="#YogaExercise"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Benefits"/>
+        <Class IRI="#Location"/>
+        <Class IRI="#ModernApplication"/>
+        <Class IRI="#Niyamas"/>
+        <Class IRI="#Yamas"/>
+        <Class IRI="#Yoga"/>
+        <Class IRI="#YogaExercise"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Benefits"/>
         <Class IRI="#Location"/>
         <Class IRI="#ModernApplication"/>
         <Class IRI="#PhilosophicalConcept"/>
@@ -533,10 +545,6 @@ zásady. Jóga je zaměřena na zlepšení zdraví, zklidnění mysli a dosažen
         <ObjectProperty IRI="#isExercise"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#isOriginLocationOf"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
         <ObjectProperty IRI="#isPhysicalBenefit"/>
         <ObjectProperty IRI="#isBnefit"/>
     </SubObjectPropertyOf>
@@ -585,11 +593,207 @@ zásady. Jóga je zaměřena na zlepšení zdraví, zklidnění mysli a dosažen
         <ObjectProperty IRI="#isPhysicalExercise"/>
     </InverseObjectProperties>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBenefit"/>
+        <Class IRI="#Yoga"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBreathingExercise"/>
+        <Class IRI="#Yoga"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCountry"/>
+        <Class IRI="#Yoga"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCountry"/>
+        <Class IRI="#YogaPath"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasExercise"/>
+        <Class IRI="#YogaPath"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasHealthBenefit"/>
+        <Class IRI="#Yoga"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMeditationExercise"/>
+        <Class IRI="#YogaPath"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMentalBenefit"/>
+        <Class IRI="#Yoga"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasModernApplication"/>
+        <Class IRI="#Yoga"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasModernApplication"/>
+        <Class IRI="#YogaPath"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasOriginLocation"/>
+        <Class IRI="#Yoga"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasOriginLocation"/>
+        <Class IRI="#YogaPath"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasPath"/>
         <Class IRI="#Yoga"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPhysicalBenefit"/>
+        <Class IRI="#Yoga"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPhysicalExercise"/>
+        <Class IRI="#YogaPath"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isBnefit"/>
+        <Class IRI="#Benefits"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isBreathingExercise"/>
+        <Class IRI="#BreathingExercise"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isCountry"/>
+        <Class IRI="#Country"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isExercise"/>
+        <Class IRI="#YogaExercise"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isHealthBenefit"/>
+        <Class IRI="#HealthBenefit"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isMeditationExercise"/>
+        <Class IRI="#MeditationExcercise"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isOriginLocation"/>
+        <Class IRI="#Location"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPathOf"/>
+        <Class IRI="#YogaPath"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPhysicalBenefit"/>
+        <Class IRI="#PhysicalBenefit"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPhysicalExercise"/>
+        <Class IRI="#PhysicalExercise"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBenefit"/>
+        <Class IRI="#Benefits"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBreathingExercise"/>
+        <Class IRI="#BreathingExercise"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCountry"/>
+        <Class IRI="#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasExercise"/>
+        <Class IRI="#YogaExercise"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasHealthBenefit"/>
+        <Class IRI="#HealthBenefit"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMeditationExercise"/>
+        <Class IRI="#MeditationExcercise"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMentalBenefit"/>
+        <Class IRI="#MentalBenefit"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasModernApplication"/>
+        <Class IRI="#ModernApplication"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasOriginLocation"/>
+        <Class IRI="#Location"/>
+    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasPath"/>
+        <Class IRI="#YogaPath"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPhysicalBenefit"/>
+        <Class IRI="#PhysicalBenefit"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPhysicalExercise"/>
+        <Class IRI="#PhysicalExercise"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isBnefit"/>
+        <Class IRI="#Yoga"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isBreathingExercise"/>
+        <Class IRI="#Yoga"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isBreathingExercise"/>
+        <Class IRI="#YogaPath"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isCountry"/>
+        <Class IRI="#Yoga"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isExercise"/>
+        <Class IRI="#Yoga"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isExercise"/>
+        <Class IRI="#YogaPath"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isHealthBenefit"/>
+        <Class IRI="#Yoga"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isMeditationExercise"/>
+        <Class IRI="#Yoga"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isMeditationExercise"/>
+        <Class IRI="#YogaPath"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isOriginLocation"/>
+        <Class IRI="#Yoga"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPathOf"/>
+        <Class IRI="#Yoga"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPhysicalBenefit"/>
+        <Class IRI="#Yoga"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPhysicalExercise"/>
+        <Class IRI="#Yoga"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPhysicalExercise"/>
         <Class IRI="#YogaPath"/>
     </ObjectPropertyRange>
     <AnnotationAssertion>
@@ -671,11 +875,6 @@ zásady. Jóga je zaměřena na zlepšení zdraví, zklidnění mysli a dosažen
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#hasPath</IRI>
         <Literal>Má  cestu</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#isOriginLocationOf</IRI>
-        <Literal>je lokací původu</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
